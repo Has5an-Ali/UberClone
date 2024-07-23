@@ -3,6 +3,7 @@ import '../const/Button.dart';
 import '../const/CustomTextfields.dart';
 import '../methods/checkinternet.dart';
 import 'Login_Screen.dart';
+import 'RegisterService.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -33,6 +34,7 @@ class SignupScreen extends StatelessWidget {
               Buttons(
                   onpress: () {
                     checkInternet(context);
+                    SignUp();
                   },
                   title: 'Signup'),
               15.heightBox,
