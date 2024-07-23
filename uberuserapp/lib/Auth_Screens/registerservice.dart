@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 
 Future<void> SignUp({required email, required password}) async {
   final auth = FirebaseAuth.instance;
-
-  final UserCredential = auth.createUserWithEmailAndPassword(email: email, password: password).then(value){
+  final UserCredential = auth.createUserWithEmailAndPassword(email: email, password: password).then(value)=>{
     
-
+    firebase
+    
   }
 }
