@@ -1,0 +1,16 @@
+com.example.uberuserapp-core-1.6.0-0 C:\Users\ah543\.gradle\caches\transforms-3\1227bb32d338e358eff4c5bf5b08270c\transformed\core-1.6.0\res
+com.example.uberuserapp-jetified-window-1.0.0-beta04-1 C:\Users\ah543\.gradle\caches\transforms-3\1f063c91a907141588f51f373b1f5f4a\transformed\jetified-window-1.0.0-beta04\res
+com.example.uberuserapp-jetified-window-java-1.0.0-beta04-2 C:\Users\ah543\.gradle\caches\transforms-3\6d2f8042b989e9f02a2914d91ea7c64c\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.uberuserapp-jetified-annotation-experimental-1.1.0-3 C:\Users\ah543\.gradle\caches\transforms-3\a15c6353ebee292a754ca976f2ce177d\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.uberuserapp-jetified-firebase-common-21.0.0-4 C:\Users\ah543\.gradle\caches\transforms-3\a1e9b7e171ebe989e7c2215846d4f6bc\transformed\jetified-firebase-common-21.0.0\res
+com.example.uberuserapp-jetified-play-services-basement-18.3.0-5 C:\Users\ah543\.gradle\caches\transforms-3\e76aed36a087f5f71489bfa0e357771e\transformed\jetified-play-services-basement-18.3.0\res
+com.example.uberuserapp-packaged_res-6 C:\Users\ah543\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.2.0\android\build\intermediates\packaged_res\debug
+com.example.uberuserapp-google-services-7 E:\UberClone\uberuserapp\android\app\build\generated\res\google-services\debug
+com.example.uberuserapp-pngs-8 E:\UberClone\uberuserapp\android\app\build\generated\res\pngs\debug
+com.example.uberuserapp-resValues-9 E:\UberClone\uberuserapp\android\app\build\generated\res\resValues\debug
+com.example.uberuserapp-rs-10 E:\UberClone\uberuserapp\android\app\build\generated\res\rs\debug
+com.example.uberuserapp-mergeDebugResources-11 E:\UberClone\uberuserapp\android\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.uberuserapp-mergeDebugResources-12 E:\UberClone\uberuserapp\android\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.uberuserapp-merged_res-13 E:\UberClone\uberuserapp\android\app\build\intermediates\merged_res\debug
+com.example.uberuserapp-debug-14 E:\UberClone\uberuserapp\android\app\src\debug\res
+com.example.uberuserapp-main-15 E:\UberClone\uberuserapp\android\app\src\main\res

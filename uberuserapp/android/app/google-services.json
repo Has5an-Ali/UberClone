@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "360097008780",
+    "project_id": "ubercl-cce60",
+    "storage_bucket": "ubercl-cce60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360097008780:android:3b53a049cd609d9526bfa9",
+        "android_client_info": {
+          "package_name": "com.example.uberuserapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOZvXGstlHGrB7Um6oNwzQ8o_HJMnqOR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
