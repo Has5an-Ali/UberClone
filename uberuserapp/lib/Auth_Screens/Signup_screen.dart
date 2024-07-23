@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:uberuserapp/const/dep.dart';
 import '../const/Button.dart';
 import '../const/CustomTextfields.dart';
@@ -10,8 +12,10 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController fullname = TextEditingController();
-    TextEditingController email = TextEditingController();
+    TextEditingController fullnamecontroller = TextEditingController();
+    TextEditingController emailcontroller = TextEditingController();
+    TextEditingController passwordcontroller = TextEditingController();
+    TextEditingController conpasswordcontroller = TextEditingController();
 
     return Scaffold(
       body: Padding(
@@ -23,18 +27,41 @@ class SignupScreen extends StatelessWidget {
               SizedBox(height: 250, width: 250, child: Image.asset(logo)),
               "Welcome  Create your account here ".text.color(Vx.white).make(),
               20.heightBox,
-              Customtextfields(controller: fullname, hinttext: 'Full Name'),
+              Customtextfields(
+                  controller: fullnamecontroller, hinttext: 'Full Name'),
               10.heightBox,
-              Customtextfields(controller: email, hinttext: 'Email'),
+              Customtextfields(controller: emailcontroller, hinttext: 'Email'),
               10.heightBox,
-              Customtextfields(hinttext: 'Password'),
+              Customtextfields(
+                  controller: passwordcontroller, hinttext: 'Password'),
               10.heightBox,
-              Customtextfields(hinttext: 'Confirm Password'),
+              Customtextfields(
+                  controller: conpasswordcontroller,
+                  hinttext: 'Confirm Password'),
               20.heightBox,
               Buttons(
                   onpress: () {
                     checkInternet(context);
-                    SignUp();
+
+                    var Name = fullnamecontroller.text.trim();
+                    var email = emailcontroller.text.trim();
+                    var password = passwordcontroller.text.trim();
+                    var confirmpass = conpasswordcontroller.text.trim();
+
+                    final auth = FirebaseAuth.instance;
+
+                    auth
+                        .createUserWithEmailAndPassword(
+                            email: email, password: password)
+                        .then((value) => {
+                              FirebaseFirestore.instance
+                                  .collection('userdata')
+                                  .doc()
+                                  .set({
+                                'Username': Name,
+                                'Email': email,
+                              })
+                            });
                   },
                   title: 'Signup'),
               15.heightBox,
