@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:uberuserapp/Screens/Home.dart';
 import 'package:uberuserapp/const/dep.dart';
 import '../const/Button.dart';
 import '../const/CustomTextfields.dart';
@@ -41,9 +42,7 @@ class SignupScreen extends StatelessWidget {
               20.heightBox,
               Buttons(
                   onpress: () {
-                    checkInternet(context);
-
-                    var Name = fullnamecontroller.text.trim();
+                    var name = fullnamecontroller.text.trim();
                     var email = emailcontroller.text.trim();
                     var password = passwordcontroller.text.trim();
                     var confirmpass = conpasswordcontroller.text.trim();
@@ -58,9 +57,13 @@ class SignupScreen extends StatelessWidget {
                                   .collection('userdata')
                                   .doc()
                                   .set({
-                                'Username': Name,
+                                'Username': name,
                                 'Email': email,
-                              })
+                              }),
+                              SnackBar(content: Text("Your Account Successfully Register "));
+                              ScaffoldMessenger(child: )
+                              Get.to(const HomeScreen())
+                              
                             });
                   },
                   title: 'Signup'),
